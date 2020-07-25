@@ -29,7 +29,7 @@ void ukuran(int lebar, int tinggi)
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     gluPerspective(50.0, lebar / tinggi, 5.0, 500.0);
-    glTranslatef(0.0, -10.0, -150.0);
+    glTranslatef(50.0, -5.0, -230.0);
     glMatrixMode(GL_MODELVIEW);
 }
 void init(void)
@@ -9247,6 +9247,7 @@ int main (int argc, char **argv)
     glutDisplayFunc(tampil);
     glutKeyboardFunc(keyboard);
     glutReshapeFunc(ukuran);
+
 
     glutMouseFunc(mouse);
 	glutMotionFunc(mouseMotion);
